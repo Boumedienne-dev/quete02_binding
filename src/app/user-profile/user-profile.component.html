@@ -1,0 +1,10 @@
+<div>
+    <img [src]= "user.photoUrl" alt="photo">
+    <p>{{user.name}}</p>
+    <p>{{user.firstName}}</p>
+    <input [(ngModel)]="user.quote"/>
+      {{ user.quote }}
+    </div>
+    <button (click)="showAge = !showAge">Afficher/Masquer mon âge</button> 
+    <div *ngIf="showAge">18</div>
+     
